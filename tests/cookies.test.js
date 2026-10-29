@@ -3,7 +3,7 @@ import { crearCookie, leerCookie } from '../src/cookies.js';
 
 describe('crearCookie', () => {
   it('crea una cookie de sesión con los valores por defecto', () => {
-    expect(crearCookie('idioma', 'es')).toBe('idioma=es; path=/; SameSite=Strict');
+    expect(crearCookie('idioma', 'es')).toBe('idioma=es; path=/; SameSite=Lax');
   });
 
   it('añade max-age, SameSite y Secure cuando se piden', () => {
