@@ -1,0 +1,39 @@
+:root {
+  --fondo: #ffffff;
+  --texto: #1b1f3b;
+  --acento: #1c7ed6;
+}
+:root[data-tema='oscuro'] {
+  --fondo: #1b1f3b;
+  --texto: #f1f1f1;
+  --acento: #74c0fc;
+}
+body {
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: system-ui, sans-serif;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+dialog {
+  max-width: 32rem;
+  border: 2px solid var(--acento);
+  border-radius: 0.5rem;
+}
+dialog::backdrop {
+  background: rgb(0 0 0 / 0.5);
+}
+fieldset {
+  display: grid;
+  gap: 0.5rem;
+  border: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+.enlace {
+  background: none;
+  border: none;
+  color: var(--acento);
+  text-decoration: underline;
+}

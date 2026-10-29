@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Librería La Hoja</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script type="module" src="src/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Librería La Hoja</h1>
+      <button id="cambiar-tema">🌙 Oscuro</button>
+    </header>
+    <main>
+      <p>Novedades, clásicos y libros de texto.</p>
+    </main>
+    <footer>
+      <p id="resumen-cookies"></p>
+      <button id="configurar-cookies">Configurar cookies</button>
+    </footer>
+
+    <dialog id="aviso-cookies" aria-labelledby="titulo-cookies">
+      <form method="dialog">
+        <h2 id="titulo-cookies">Cookies</h2>
+        <p>
+          Usamos cookies técnicas, necesarias para que la web funcione. Con tu permiso, usaremos
+          además cookies de analítica y de personalización.
+        </p>
+        <fieldset id="opciones-cookies">
+          <label
+            ><input type="checkbox" name="analitica" /> Analítica (estadísticas de visitas)</label
+          >
+          <label
+            ><input type="checkbox" name="personalizacion" /> Personalización
+            (recomendaciones)</label
+          >
+        </fieldset>
+        <button value="rechazar">Rechazar</button>
+        <button value="guardar">Guardar selección</button>
+        <button value="aceptar">Aceptar todas</button>
+        <button value="despues" class="enlace">Decidir más tarde</button>
+      </form>
+    </dialog>
+  </body>
+</html>
