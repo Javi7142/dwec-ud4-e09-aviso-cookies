@@ -156,7 +156,7 @@ npm run format:check   # comprueba el formato con Prettier (npm run format lo co
 
 ## Depuración
 
-No tengo el panel **Aplicación** (*Application*) de las DevTools delante, así que miré lo mismo que muestra, leyendo desde la consola de Chrome `localStorage`, `sessionStorage` y `document.cookie` después de cada acción (con clics y teclas reales sobre la página servida en el puerto 3409):
+En lugar de abrir el panel **Aplicación** (*Application*) de las DevTools, miré lo mismo que muestra leyendo desde la consola de Chrome `localStorage`, `sessionStorage` y `document.cookie` después de cada acción (con el ratón y el teclado sobre la página servida en el puerto 3409):
 
 | Acción | `localStorage` | `sessionStorage` | Cookies |
 |--------|----------------|------------------|---------|
